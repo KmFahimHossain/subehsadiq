@@ -1,0 +1,65 @@
+/* src/components/AnalogClock.css */
+.analog-clock {
+  display: inline-block;
+  position: relative;
+  margin-inline: auto;
+}
+
+.clock-ring {
+  fill: #fff;
+  stroke: #333;
+  stroke-width: 6px;
+}
+
+.tick.hour {
+  stroke: #111;
+  stroke-width: 3px;
+}
+
+.tick.minute {
+  stroke: #888;
+  stroke-width: 1px;
+}
+
+.hour-label {
+  font-weight: 700;
+  font-size: 8px;
+  fill: #fff;
+  user-select: none;
+}
+
+.hand-hour {
+  stroke: #222;
+  stroke-width: 6px;
+  stroke-linecap: round;
+}
+
+.hand-minute {
+  stroke: #555;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.hand-second {
+  stroke: red;
+  stroke-width: 2px;
+  stroke-linecap: round;
+}
+
+.center-dot {
+  fill: red;
+}
+
+.hour-label.big-label {
+  font-size: 18px;
+  font-weight: 900;
+  fill: #fff;
+}
+
+.digital-time {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
