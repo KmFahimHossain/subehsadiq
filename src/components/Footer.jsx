@@ -53,7 +53,7 @@ function Footer() {
 
         {/* Row 4 */}
         <div className="footer-row">
-          Created at: September 9, 2025 • Rabi I 17, 1447
+          Created on: September 9, 2025 • Rabi I 17, 1447
         </div>
 
         {/* Row 5 */}
