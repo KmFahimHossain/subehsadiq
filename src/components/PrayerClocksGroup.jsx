@@ -164,8 +164,8 @@ function PrayerClocksGroup({ clockType = 12, timings, timeZone }) {
         const y2 = center.y - r * Math.cos((Math.PI * endDeg) / 180);
 
         const midDeg = (startDeg + sweep / 2) % 360;
-        const xm = center.x + r * 1.10 * Math.sin((Math.PI * midDeg) / 180);
-        const ym = center.y - r * 1.10 * Math.cos((Math.PI * midDeg) / 180);
+        const xm = center.x + r * 1.2 * Math.sin((Math.PI * midDeg) / 180);
+        const ym = center.y - r * 1.2 * Math.cos((Math.PI * midDeg) / 180);
 
         const sx = center.x + r * 1.15 * Math.sin((Math.PI * startDeg) / 180);
         const sy = center.y - r * 1.15 * Math.cos((Math.PI * startDeg) / 180);
@@ -365,7 +365,7 @@ function PrayerClocksGroup({ clockType = 12, timings, timeZone }) {
     >
       {/* Always single analog clock (1–12) */}
       <AnalogClock
-        size={320}
+        size={Math.min(window.innerWidth * 0.5, 450)}
         clockType={12}
         date={getTimeInZone(currentTime, timeZone)}
       />
@@ -429,7 +429,7 @@ function PrayerClocksGroup({ clockType = 12, timings, timeZone }) {
           <ArcClock
             intervals={prayers}
             format={24}
-            size={Math.min(window.innerWidth * 0.5, 600)}
+            size={Math.min(window.innerWidth * 0.65, 600)}
             label="24h Clock"
             showHand
           />
